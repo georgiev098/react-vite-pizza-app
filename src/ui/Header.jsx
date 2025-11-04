@@ -4,7 +4,7 @@ import SearchOrder from "../features/order/SearchOrder";
 export default function Header() {
   return (
     <div>
-      <header>
+      <header className="bg-amber-500">
         <Link to="/">Mamma mia.</Link>
         <SearchOrder />
       </header>
