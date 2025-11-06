@@ -40,31 +40,40 @@ export default function CreateOrder() {
   const formErrors = useActionData();
 
   return (
-    <div>
-      <h2>Ready to order? Let's go!</h2>
+    <div className="py-6 px-4">
+      <h2 className="text-xl font-semibold mb-8">Ready to order? Let's go!</h2>
 
       <Form method="POST">
-        <div>
-          <label>First Name</label>
-          <input type="text" name="customer" required className="input" />
+        <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center ">
+          <label className="sm:basis-40">First Name</label>
+          <input type="text" name="customer" required className="input grow" />
         </div>
 
-        <div>
-          <label>Phone number</label>
-          <div>
-            <input type="tel" name="phone" required className="input" />
-          </div>
-          {formErrors?.phone && <p>{formErrors.phone}</p>}
-        </div>
-
-        <div>
-          <label>Address</label>
-          <div>
-            <input type="text" name="address" required className="input" />
+        <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center ">
+          <label lassName="sm:basis-40">Phone number</label>
+          <div className="grow">
+            <input type="tel" name="phone" required className="input w-full" />
+            {formErrors?.phone && (
+              <p className="text-xs mt-2 text-red-700 bg-red-100 p-2 rounded-md">
+                {formErrors.phone}
+              </p>
+            )}
           </div>
         </div>
 
-        <div>
+        <div className="mb-5 flex gap-2 flex-col sm:flex-row sm:items-center ">
+          <label lassName="sm:basis-40">Address</label>
+          <div className="grow ">
+            <input
+              type="text"
+              name="address"
+              required
+              className="input w-full"
+            />
+          </div>
+        </div>
+
+        <div className="mb-12 flex gap items-center font-medium">
           <input
             className="h-6 w-6 accent-amber-400 focus:outline-none focus:ring focus:ring-amber-400 focus:ring-offset-2"
             type="checkbox"
