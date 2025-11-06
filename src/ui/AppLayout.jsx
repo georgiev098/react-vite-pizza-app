@@ -9,13 +9,16 @@ export default function AppLayout() {
   return (
     <div className="h-screen grid grid-rows-[auto_1fr_auto]">
       {isLoading && <Loader />}
+
       <Header />
+
       <div className="overflow-scroll ">
         <main className=" max-w-3xl mx-auto">
           <Outlet />
         </main>
-        <CartOverview />
       </div>
+
+      <CartOverview />
     </div>
   );
 }
