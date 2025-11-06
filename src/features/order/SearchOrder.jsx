@@ -16,6 +16,7 @@ export default function SearchOrder() {
         placeholder="Search order #"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        className="rounded-full px-4 py-2 text-sm bg-amber-100 placeholder:text-stone-500 w-28 sm:w-64 focus:w-72 transition-all duration-300 focus:outline-none focus:ring focus:ring-amber-700 focus:ring-opacity-50 "
       ></input>
     </form>
   );
