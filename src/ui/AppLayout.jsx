@@ -13,8 +13,8 @@ export default function AppLayout() {
       <div className="overflow-scroll ">
         <main className=" max-w-3xl mx-auto">
           <Outlet />
-          <CartOverview />
         </main>
+        <CartOverview />
       </div>
     </div>
   );
