@@ -1,10 +1,10 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 // function getPosition() {
 //   return new Promise(function (resolve, reject) {
 //     navigator.geolocation.getCurrentPosition(resolve, reject);
 //   });
 // }
-
-const { createSlice } = require("@reduxjs/toolkit");
 
 // async function fetchAddress() {
 //   // 1) We get the user's geolocation position
