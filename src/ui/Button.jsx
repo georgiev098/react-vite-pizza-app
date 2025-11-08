@@ -9,6 +9,7 @@ export default function Button({ children, disabled, to, type, onClick }) {
     secondary:
       "uppercase text-sm border-2 border-stone-300 py-4 px-2.5 md:px-6 md:py-3.5 font-semibold text-stone-400 inline-block tracking-wide rounded-full hover:bg-stone-500 transition-colors focus:outline-none focus:ring focus:ring-stone-200 focus:ring-offset-2 disabled:cursor-not-allowed",
     small: base + " px-4 py-2 md:px-5 md:py-2.5 text-xs",
+    round: base + " px-2.5 py-1 md:px-3.5 md:py-2 text-s ",
   };
 
   if (to) {
